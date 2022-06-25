@@ -9,11 +9,12 @@ Our analysis shows that, based on this sample of stocks, the performance of gree
 ### Outcome of Code Refactoring
 This code initially used a nested For loop to iterate through every line of data twelve times (once for each ticker in the ticker index), outputting the ticker, volume, and returns for one stock per loop. This code was refactored to loop through each line of data only once, using conditionals to sort that data into arrays of tickers, volumes, and returns. Outputs could then be pulled from those arrays. 
 This change increased the speed at which the macro ran, from over 1 second to a fraction of a second (as seen in the below images).
-![2017 Original Runtime](resources/VBA_Challenge_2017_Original.png)
-![2018 Original Runtime](resources/VBA_Challenge_2018_Original.png)
 
-![2017 Runtime](resources/VBA_Challenge_2017.png)
-![2018 Runtime](resources/VBA_Challenge_2018.png)
+![2017 Original Runtime](/Resources/VBA_Challenge_2017_Original.png)
+![2018 Original Runtime](/Resources/VBA_Challenge_2018_Original.png)
+
+![2017 Runtime](/Resources/VBA_Challenge_2017.png)
+![2018 Runtime](/Resources/VBA_Challenge_2018.png)
 
 ### Pros and Cons of Refactoring Code 
 
